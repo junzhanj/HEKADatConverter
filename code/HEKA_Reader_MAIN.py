@@ -712,7 +712,8 @@ class Data(object):
         nItemsPerBlock = np.int(trace.InterleaveSizeS/dByte)
         TotalBytes = trace.DataPoints * dByte
         #print('{:f}, {:f}'.format(trace.DataPoints, trace.InterleaveSizeS))
-        if trace.DataPoints >= trace.InterleaveSizeS and trace.InterleaveSizeS !=0:
+        #if trace.DataPoints >= trace.InterleaveSizeS and trace.InterleaveSizeS !=0:
+        if trace.InterleaveSizeS !=0:
             print('long block')
             ### there is a mixture of data points (count) and bytes!
             data = np.fromfile(fh, count=nItemsPerBlock, dtype=dtype)
