@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+# by Junzhanj
 
 from HekaHelpers import HekaBundleInfo
 import numpy as np
@@ -12,6 +13,7 @@ def writeABF1(sweepData, filename, sampleRateHz, units='pA'):
     Create an ABF1 file from scratch and write it to disk.
     Files created with this function are compatible with MiniAnalysis.
     Data is expected to be a 2D numpy array (each row is a sweep).
+    Credit to pyABF
     """
 
     assert isinstance(sweepData, np.ndarray)
