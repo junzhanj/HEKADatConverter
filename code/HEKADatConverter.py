@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-# by Junzhanj
+# by Junzhanj @ https://github.com/junzhanj
 
 from HekaHelpers import HekaBundleInfo
 import numpy as np
